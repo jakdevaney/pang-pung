@@ -1,9 +1,12 @@
+
+if( win_string == "" ) {
 if( player_1_score >= win_score ) {
 	win_string = "Player 1";
 }
 
 if( player_2_score >= win_score ) {
 	win_string = "Player 2";
+}
 }
 
 if( tip_time > 0 ) {

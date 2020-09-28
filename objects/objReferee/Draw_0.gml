@@ -18,16 +18,14 @@ if( win_string != "" ) {
 	//	var b = random(255);
 	//	draw_set_color(make_color_rgb(r, g, b));
 	draw_set_color(c_red);
-		
-	win_string = win_string + " wins!";
-		
-	draw_text(683, 60, win_string);
+
+	draw_text(683, 60, win_string + " wins!");
 	
 	tip_time++;
 }
 
 if( tip_time > 2000000 ) {
-	var tip_string = "Press R to reset the score";
+	var tip_string = "Press R to restart";
 	
 	if( tip_time % 1000000 < 500000 ) {
 		draw_set_color(c_red);
